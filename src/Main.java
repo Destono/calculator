@@ -42,7 +42,7 @@ public class Main {
     static int operand(String i) throws Exception {
         try {
             int operand = Integer.parseInt(i);
-            if (operand <= 0 || operand >= 10) {
+            if (operand < 1 || operand > 10) {
                 throw new Exception();
             }
             return operand;
